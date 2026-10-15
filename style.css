@@ -1,13 +1,6 @@
-/* ==========================================================
-   style.css – VÁZ
-   A farmer titokzatos története + szövegértés teszt
-   A "# ..." kommentek mondják meg, hova milyen elem kell.
-   ========================================================== */
 
 
-/* ---------- ALAP ---------- */
 
-/* # body – a háttér a farmeranyag képe (pl. farmer.jpg) */
 body {
     margin: 0;
     font-family: Verdana, Arial, sans-serif;
@@ -17,8 +10,7 @@ body {
     color: white;
 }
 
-/* # fő tároló (pl. div#oldal vagy main) – két oszlopot fog össze:
-   bal: cikk, jobb: teszt */
+
 #oldal {
     display: flex;
     gap: 20px;
@@ -26,9 +18,7 @@ body {
 }
 
 
-/* ---------- BAL OSZLOP: CIKK ---------- */
 
-/* # article#cikk (vagy div#cikk) – átlátszó kék háttér, bal oldali széles oszlop */
 #cikk {
     width: 62%;
     padding: 20px;
@@ -36,15 +26,14 @@ body {
     border-radius: 10px;
 }
 
-/* # h1 – a cikk címe: "A farmer titokzatos története – Már 1655-ben is hordták"
-   középre igazítva, kisebb betűméret, de kiemelt */
-#cikk h1 {
+
+h1 {
     text-align: center;
     font-size: 24px;
 }
 
-/* # p – a cikk bekezdései (6 db): sorkizárt, behúzott első sor */
-#cikk p {
+
+p {
     text-align: justify;
     text-indent: 25px;
     line-height: 1.5;
@@ -62,18 +51,18 @@ body {
 }
 
 /* # h2 – "Szövegértés teszt" főcím a jobb oszlop tetején, középre */
-#teszt h2 {
+h2 {
     text-align: center;
 }
 
 /* # h3 – a kérdések címei: "1. kérdés" ... "6. kérdés" (6 db), kicsit beljebb húzva */
-#teszt h3 {
+h3 {
     margin-left: 20px;
     font-weight: normal;
 }
 
 /* # label – "Név/osztály" felirat a név mező fölött */
-#teszt label {
+label {
     display: block;
 }
 
