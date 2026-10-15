@@ -1,0 +1,143 @@
+/* ==========================================================
+   style.css – VÁZ
+   A farmer titokzatos története + szövegértés teszt
+   A "# ..." kommentek mondják meg, hova milyen elem kell.
+   ========================================================== */
+
+
+/* ---------- ALAP ---------- */
+
+/* # body – a háttér a farmeranyag képe (pl. farmer.jpg) */
+body {
+    margin: 0;
+    font-family: Verdana, Arial, sans-serif;
+    background-image: url("farmer.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* # fő tároló (pl. div#oldal vagy main) – két oszlopot fog össze:
+   bal: cikk, jobb: teszt */
+#oldal {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* ---------- BAL OSZLOP: CIKK ---------- */
+
+/* # article#cikk (vagy div#cikk) – átlátszó kék háttér, bal oldali széles oszlop */
+#cikk {
+    width: 62%;
+    padding: 20px;
+    background-color: rgba(80, 80, 220, 0.7);
+    border-radius: 10px;
+}
+
+/* # h1 – a cikk címe: "A farmer titokzatos története – Már 1655-ben is hordták"
+   középre igazítva, kisebb betűméret, de kiemelt */
+#cikk h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+/* # p – a cikk bekezdései (6 db): sorkizárt, behúzott első sor */
+#cikk p {
+    text-align: justify;
+    text-indent: 25px;
+    line-height: 1.5;
+}
+
+
+/* ---------- JOBB OSZLOP: SZÖVEGÉRTÉS TESZT ---------- */
+
+/* # form#teszt (vagy div#teszt) – jobb oldali keskenyebb oszlop, szintén átlátszó kék háttér */
+#teszt {
+    width: 33%;
+    padding: 20px;
+    background-color: rgba(80, 80, 220, 0.7);
+    border-radius: 10px;
+}
+
+/* # h2 – "Szövegértés teszt" főcím a jobb oszlop tetején, középre */
+#teszt h2 {
+    text-align: center;
+}
+
+/* # h3 – a kérdések címei: "1. kérdés" ... "6. kérdés" (6 db), kicsit beljebb húzva */
+#teszt h3 {
+    margin-left: 20px;
+    font-weight: normal;
+}
+
+/* # label – "Név/osztály" felirat a név mező fölött */
+#teszt label {
+    display: block;
+}
+
+/* # input[type="text"] – Név/osztály beviteli mező (placeholder: Kis Béla/10.A) */
+#teszt input[type="text"] {
+    width: 90%;
+}
+
+/* # p.kerdes (vagy div.kerdes) – a kérdés szövege minden kérdés alatt */
+.kerdes {
+    margin: 5px 0;
+}
+
+
+/* ---------- 1. KÉRDÉS: igaz / hamis ---------- */
+
+/* # input[type="radio"] – Igaz / Hamis választógomb (name="k1") */
+#teszt input[type="radio"] {
+}
+
+
+/* ---------- 2. és 4. KÉRDÉS: többszörös választás ---------- */
+
+/* # input[type="checkbox"] – jelölőnégyzetek (A, B, C, D válaszok a 2. és 4. kérdésnél) */
+#teszt input[type="checkbox"] {
+}
+
+
+/* ---------- 3. KÉRDÉS: egyszeres választás ---------- */
+
+/* # input[type="radio"] – A, B, C, D rádiógombok (name="k3") – lehet külön osztály is */
+
+
+/* ---------- 5. KÉRDÉS: sorrend (legördülő listák) ---------- */
+
+/* # select – 4 db legördülő lista, mindegyik mellett egy cím
+   (Farmer története, A párizsi galéria, Olaszország 2006, Koltatott és a rugalmas farmer) */
+#teszt select {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+
+/* ---------- 6. KÉRDÉS: szabad szöveg ---------- */
+
+/* # textarea – hosszabb válasz beírására, szinte a teljes oszlop szélességében */
+#teszt textarea {
+    width: 95%;
+    height: 150px;
+}
+
+
+/* ---------- GOMBOK ---------- */
+
+/* # div.gombok – a két gomb tárolója (Törlés balra, Küldés jobbra) */
+.gombok {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* # input[type="reset"] vagy button – "Törlés" gomb (bal oldal) */
+#teszt input[type="reset"] {
+}
+
+/* # input[type="submit"] vagy button – "Küldés" gomb (jobb oldal) */
+#teszt input[type="submit"] {
+}
